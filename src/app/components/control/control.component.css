@@ -1,0 +1,9 @@
+img {
+    border-radius: 90%;
+    padding: 25px;
+}
+
+#banner {
+    margin: 20px;
+    background-color: rgb(97, 78, 61);
+}

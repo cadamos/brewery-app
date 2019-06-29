@@ -1,0 +1,6 @@
+<div>
+    <app-control (searchBreweries)="searchBreweries($event)"></app-control>
+    <div class="d-flex flex-wrap justify-content-center">
+        <app-brewery-item *ngFor="let brewery of breweries | specBrewery:state" [brewery]="brewery"></app-brewery-item>
+    </div>
+</div>
