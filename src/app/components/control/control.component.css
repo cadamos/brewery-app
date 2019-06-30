@@ -4,6 +4,21 @@ img {
 }
 
 #banner {
-    margin: 20px;
-    background-color: rgb(97, 78, 61);
+    background-image: url("http://www.db.co.nz/DBBreweries/files/9c/9c41a33b-a1ab-4fd4-bf9e-aab2173b1496.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    padding-left: 50px;
+
+}
+
+h1 {
+    padding-top: 50px;
+    text-shadow: 4px 4px 4px #000000; 
+    text-align: left;
+    vertical-align: top;
+}
+ 
+#input {
+    padding-left: 15px;
 }

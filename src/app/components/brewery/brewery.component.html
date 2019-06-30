@@ -1,6 +1,9 @@
-<div>
+<div class="container">
     <app-control (searchBreweries)="searchBreweries($event)"></app-control>
     <div class="d-flex flex-wrap justify-content-center">
         <app-brewery-item *ngFor="let brewery of breweries | specBrewery:state" [brewery]="brewery"></app-brewery-item>
+    </div>
+    <div id="footer" class="container">
+        <h1 class="lead text-center">Thank you for visiting our Brewery Finder. Hoppy drinkin'</h1>
     </div>
 </div>

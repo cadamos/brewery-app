@@ -1,0 +1,10 @@
+.container {
+    background-color: #313131;
+    padding: 0px;
+}
+
+#footer {
+    color: rgb(206, 206, 206);
+    font-style: oblique;
+    padding: 50px;
+}

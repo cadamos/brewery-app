@@ -24,8 +24,14 @@ export class BreweryComponent implements OnInit {
 
   searchBreweries(state: string) {
     this.state = state;
-    this.breweryService.getBreweries(state).subscribe(breweries => {
-      this.breweries = breweries;
-    });
+    if (!state) {
+      this.breweryService.getAllBreweries().subscribe(breweries => {
+        this.breweries = breweries;
+      });
+    } else {
+      this.breweryService.getBreweries(state).subscribe(breweries => {
+        this.breweries = breweries;
+      });
+    }
   }
 }

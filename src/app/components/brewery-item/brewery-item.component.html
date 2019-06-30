@@ -1,11 +1,13 @@
-<div id="card" class="card align-self-stretch" style="width: 18rem">
+<div class="card align-self-stretch" style="width: 18rem">
     <div class="card-body">
-        <h5 class="card-title">{{ brewery.name }}</h5>
+        <h5 class="card-header text-center">{{ brewery.name }}</h5>
         <ul>
-            <li class="card-subtitle mb-2 text-muted">TYPE: {{ brewery.brewery_type }}</li>
-            <li class="card-text">{{ brewery.city }}, {{ brewery.state }}</li>
-            <li>Call: <a [href]="breweryPhone">{{ brewery.phone }}</a></li>
-            <li>Click <a [href]="breweryUrl">here</a> to visit website</li>
+            <li id="street" class="card-subtitle text-muted">{{ brewery.street }}</li>
+            <li class="card-subtitle mb-2 text-muted">{{ brewery.city }}, {{ brewery.state }}</li>
+            <li class="card-text">Type of brewery: {{ brewery.brewery_type | titlecase }}</li>
+        </ul>
+        <ul>
+            <li class="card-text align-text-bottom"><a [href]="breweryPhone" class="badge badge-primary">Phone</a> <a [href]="breweryUrl" target="_blank" class="badge badge-primary">Website</a></li>
         </ul>
     </div>
 </div>
